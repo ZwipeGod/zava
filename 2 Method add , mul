@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+	static int add(int num1,int num2) {
+		return num1+num2;
+	}
+	static int mul(int num2,int num3) {
+		return num2*num3;
+	}
+	public static void main(String []args) {
+		Scanner st=new Scanner(System.in);
+		int a=st.nextInt();
+		int b=st.nextInt();
+		int resulta=add(a,b);
+		int resultm=mul(a,b);
+		System.out.println(resulta);
+		System.out.println(resultm);
+	}
+
+}
