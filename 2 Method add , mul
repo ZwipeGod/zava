@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class Main {
+public class reverse {
 	static int add(int num1,int num2) {
 		return num1+num2;
 	}
-	static int mul(int num2,int num3) {
-		return num2*num3;
+	static void mul(int num2,int num3) {
+		int resultm=num2*num3;
+		System.out.println(resultm);
 	}
 	public static void main(String []args) {
 		Scanner st=new Scanner(System.in);
 		int a=st.nextInt();
 		int b=st.nextInt();
 		int resulta=add(a,b);
-		int resultm=mul(a,b);
 		System.out.println(resulta);
-		System.out.println(resultm);
+		mul(a,b);
 	}
 
 }
