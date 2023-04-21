@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String []args) {
+		Scanner st=new Scanner(System.in);
+		time o1 = new time();
+		time o2 = new time();
+		o1.hour=st.nextInt();
+		o2.hour=st.nextInt();
+		o1.min=st.nextInt();
+		o2.min=st.nextInt();
+		add(o1.hour,o1.min,o2.hour,o2.min);
+	}
+	static void add(int a,int b,int c ,int d) {
+		if(b+d>60) {
+			int e=(b+d)-60;
+			int f=a+c+1;
+			System.out.print(f+"\n"+e);
+		}
+		else {
+			int e=a+c;
+			int f=b+d;
+			System.out.print(f+"\n"+e);
+		}
+	}
+static class time{
+	int hour,min;
+}
+}
